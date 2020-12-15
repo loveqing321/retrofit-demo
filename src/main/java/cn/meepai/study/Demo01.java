@@ -22,7 +22,7 @@ public class Demo01 {
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://aurora-srv.hellobike.cn")
+                .baseUrl("https://aurora-srv.baidu.com")
                 .addConverterFactory(JacksonConverterFactory.create(objectMapper))
                 .build();
 
